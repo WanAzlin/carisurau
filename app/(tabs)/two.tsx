@@ -32,7 +32,15 @@ export default function TabTwoScreen() {
                source={require("../../assets/images/img3.png")} />
       <View style ={{flexDirection: "row"}}>
       <View  style={styles.box1}>
-        <Text style={styles.title3}>Surau Al-Ikhlas</Text>
+      <Link href="/detail1" asChild>
+        <Pressable>
+             {({ pressed }) => (
+              <Text style={styles.title3}>Surau Al-Ikhlas</Text>
+       
+        )}
+        </Pressable>
+      </Link>
+        
         <View style ={{flexDirection: "row"}}>
         <Entypo name="location-pin" size={24} color="black" style={styles.loc} />
         <Text style={styles.titloc}>Petaling, Selangor</Text>
@@ -97,14 +105,14 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderColor: "#EF6E7A",
     width: 245,
-    left: 14,
+    left: 25,
     height: 70
   },
   box2: {
     borderWidth: 0.5,
     borderColor: "#707B7C",
     width: 120,
-    left: 12,
+    left: 21.5,
     height: 70,
     backgroundColor: "#EF6E7A"
   },
@@ -144,8 +152,8 @@ const styles = StyleSheet.create({
   iC2: {
     width: 60,
     height: 60,
-    marginLeft: 70,
-    marginTop:20,
+    marginLeft: 90,
+    marginTop:15,
     borderRadius: 50,
   },
   searchBar: {
@@ -158,7 +166,7 @@ const styles = StyleSheet.create({
   },
   img3: {
     
-    marginLeft: 15,
+    marginLeft: 25,
     marginTop:20,
     
   },

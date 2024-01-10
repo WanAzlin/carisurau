@@ -47,6 +47,7 @@ export default function TabLayout() {
         name="two"
         options={{
           title: '',
+          
           tabBarIcon: ({ color }) => <FontAwesome name="home" size={35} color={color} />,
         }}
       />
